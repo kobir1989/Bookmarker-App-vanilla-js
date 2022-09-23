@@ -18,8 +18,57 @@
         },
       };
     </script>
+
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body onload="fetchBookmarks()">
+    <div class="container lg:w-4/12 w-10/12 mx-auto mt-[1rem]">
+      <div class="header mb-[4rem] border-b-[1px] border-white py-2">
+        <nav><h3 class="text-[1.5rem] text-[#9BA4B4]">Bookmarker</h3></nav>
+      </div>
+
+      <div class="p-10 bg-[#FFF] rounded">
+        <h2 class="text-[1.5rem] text-center py-8">
+          Bookmark Your Favorite Sites
+        </h2>
+        <form id="form" class="flex flex-col items-center justify-center">
+          <div class="flex flex-col items-center rounded-l mb-6 w-full">
+            <label class="text-[.8rem] font-medium">Site Name</label>
+            <input
+              type="text"
+              class="border-[1px] border-[#F1F6F9] w-full h-[2.5rem] p-2"
+              id="siteName"
+              placeholder="Website Name"
+            />
+          </div>
+          <div class="flex flex-col items-center rounded-l mb-6 w-full">
+            <label class="text-[.8rem] font-medium">Site URL</label>
+            <input
+              type="text"
+              class="border-[1px] border-[#F1F6F9] w-full h-[2.5rem] p-2"
+              id="siteUrl"
+              placeholder="Website URL"
+            />
+          </div>
+          <button
+            type="submit"
+            class="bg-[#394867] text-[#fff] w-[10rem] h-[2.5rem] rounded"
+            id="form-btn"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+      <div class="bg-[#fff] p-4 mt-8">
+        <div class="">
+          <div id="bookmarksResults"></div>
+        </div>
+      </div>
+      <footer class="text-[.7rem]">
+        <p>&copy; 2022 | Kabir Hossain</p>
+      </footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>

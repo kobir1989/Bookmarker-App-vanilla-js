@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: gray;
+  background-color: #f1f6f9;
   font-family: 'Noto Sans', sans-serif;
+  color: #394867;
 }
